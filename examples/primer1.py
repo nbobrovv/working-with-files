@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-# open the file2.txt in append mode. Create a new file if no such file exists.
+
 if __name__ == "__main__":
     with open("file2.txt", "w") as fileptr:
         # appending the content to the file

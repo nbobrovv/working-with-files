@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+
 if __name__ == "__main__":
     fileptr = open("file2.txt", "a")
     # overwriting the content of the file
