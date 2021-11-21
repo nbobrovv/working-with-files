@@ -37,6 +37,7 @@ if __name__ == "__main__":
                     count = count + 1
             print(list_lines)
             line = file.readlines()
+            
     except IOError:
         # если возникнут проблемы с чтением файла, отображаем ошибку
         print("Ошибка при доступе к файлу", file=sys.stderr)
