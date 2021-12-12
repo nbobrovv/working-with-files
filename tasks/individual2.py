@@ -35,7 +35,7 @@ if __name__ == "__main__":
                     list_lines.append(rows)
                     count = count + 1
 
-            print(list_lines, end="")
+            print(*list_lines, end="")
 
     except IOError:
         # если возникнут проблемы с чтением файла, отображаем ошибку
