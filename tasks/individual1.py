@@ -8,9 +8,7 @@
 
 
 if __name__ == "__main__":
-    with open("individual1.txt", "r") as fileptr:
-        sentences = fileptr.readlines()
-        print(sentences)
-        print()
-        reverse_sentences = " ".join(reversed(sentences))
-        print(reverse_sentences)
+    with open("individual1.txt", "r", encoding="utf-8") as fileptr:
+        sentences = fileptr.read()
+        reverse_sentences = (sentences.splitlines())
+        print(*reversed(reverse_sentences), sep='\n')
