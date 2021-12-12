@@ -11,7 +11,6 @@
 
 import sys
 
-
 if __name__ == "__main__":
     ten_lines = 10
 
@@ -35,9 +34,9 @@ if __name__ == "__main__":
                 if count < ten_lines:
                     list_lines.append(rows)
                     count = count + 1
-            print(list_lines)
-            line = file.readlines()
-            
+
+            print(list_lines, end="")
+
     except IOError:
         # если возникнут проблемы с чтением файла, отображаем ошибку
         print("Ошибка при доступе к файлу", file=sys.stderr)
