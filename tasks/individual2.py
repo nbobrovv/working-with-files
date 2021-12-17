@@ -23,19 +23,19 @@ if __name__ == "__main__":
         with open(sys.argv[1], "r", encoding="utf-8") as file:
 
             # читаем первую строку из файла
-            line = file.readlines()
+            lines = file.readlines()
 
             # создаем список
             list_lines = []
 
             # запуск цикла, читаем строки пока не дойдём до 10
             count = 0
-            for rows in line:
+            for rows in lines:
                 if count < ten_lines:
                     list_lines.append(rows)
                     count = count + 1
 
-            print(*list_lines, end="")
+            print(*list_lines, end="\n")
 
     except IOError:
         # если возникнут проблемы с чтением файла, отображаем ошибку
